@@ -69,7 +69,7 @@ public class RSIIndicatorTest extends AbstractIndicatorTest<Indicator<Num>, Num>
     @Test
     public void firstValueShouldBeZero() throws Exception {
         Indicator<Num> indicator = getIndicator(new ClosePriceIndicator(data), 14);
-        assertEquals(data.numOf(0), indicator.getValue(0));
+        assertEquals(data.numOf(50), indicator.getValue(0));
     }
 
     @Test

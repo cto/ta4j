@@ -51,7 +51,7 @@ public class RSIIndicator extends CachedIndicator<Num> {
         Num averageLoss = averageLossIndicator.getValue(index);
         if (averageLoss.isZero()) {
             if (averageGain.isZero()) {
-                return numOf(0);
+                return numOf(50);
             } else {
                 return numOf(100);
             }
